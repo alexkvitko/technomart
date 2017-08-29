@@ -92,25 +92,3 @@ body{
     text-decoration: none;
     color: #fff;
 }*/
-
-.pop-goods-item{
-    border: 1px dotted red;
-    width: 220px;
-    height: 318px;
-}
-
-.brands-logo-line1 {
-    border: 1px dotted red;
-    width: 940px;
-    height: 145px;
-}
-
-.brands-logo {
-    border: 1px dotted red;
-    width: 220px;
-    height: 145px;
-}
-
-.service-block{
-    
-}
