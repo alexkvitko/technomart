@@ -9,7 +9,7 @@ body{
 	font-family: "PT Sans Narrow", sans-serif;
 	color: black;
 }
-
+/*
 .main-header{
     min-height: 320px;
     border: 1px dotted red;
@@ -25,7 +25,7 @@ body{
 
     margin-bottom: 45px;
 }
-/*
+
 .container{
     width: 940px;
     margin: 0 auto;
