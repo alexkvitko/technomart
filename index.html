@@ -107,7 +107,7 @@
         <section class="pop-goods">
             <div class="pop-goods-line">
                 <span>Популярные товары</span>
-                <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ:</a>
+                <a href="#">Все популярные товары:</a>
             </div>
             <a class="pop-goods-item" href="#">
                 <img src="img/pop-goods-item-1.jpg" alt="Перфоратор BOSCH BFG 9000" width="182" height="130">
@@ -142,7 +142,7 @@
         <section class="pop-brands">
             <div class="pop-brands-line">
                 <span>Популярные товары</span>
-                <a class="pop-brands-lin" href="#">ВСЕ ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</a>
+                <a class="pop-brands-lin" href="#">Все популярные производители:</a>
             </div>
             <div class="brands-logo-line1">
                 <img class="brands-logo" src="img/pop-brands-logo-1.jpg" alt="BOSCH" width="164" height="90">
@@ -159,27 +159,29 @@
         </section>
         <!-- Блок Сервис с табами -->
         <section class="service-block">
-            <div class="about-service">
-                <span class="service-title">СЕРВИСЫ</span>
+            <div class="service-about">
+                <span class="service-title">Сервисы</span>
                 <p class="body-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
-            <div class="service-tabs">
-                <ul class="tabs">
-                    <li>
-                        <a class="tab-delivery" href="#">Доставка</a>
-                    </li>
-                    <li>
-                        <a class="tab-guaranty" href="#">Гарантии</a>
-                    </li>
-                    <li>
-                        <a class="tab-credit" href="#">Кредит</a>
-                    </li>
-                </ul>
+            <!-- Табы -->
+            <div class="three-tabs">
+                <input type="radio" name="3tabs" id="tab-delivery" checked="checked">Доставка</input>
+                <input type="radio" name="3tabs" id="tab-guaranty">Гарантии</input>
+                <input type="radio" name="3tabs" id="tab-credit">Кредит</input>
             </div>
-            <div class="tabs-text-block">
-                <span class="tabs-title">ДОСТАВКА</span>
-                <p class="body-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
-                <img class="first-tab-img" src="img/…" alt="" width="" height="">
+            <!-- Блоки с текстом и фоновой картинкой -->
+            <div class="tab-delivery-block">
+                <span class="tabs-title">Доставка</span>
+                <p class="body-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </div>
+            <div class="tab-guaranty-block">
+                <span class="tabs-title">Гарантии</span>
+                <p class="body-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="tab-credit-block">
+                <span class="tabs-title">Доставка</span>
+                <p class="body-text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
+                <input type="submit" class="service-btn" value="Отправить заявку">
             </div>
         </section>
     </main>
