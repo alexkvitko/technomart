@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
@@ -9,8 +11,57 @@
 </head>
 <body>
     <header class="catalog-header">
-        <div class="container">
-
+        <!-- Логотип, поиск, закладки, корзина, оформить заказ -->
+        <div class="header-line">
+            <div class="container">
+                <img class="main-logo" src="img/logo.png" alt="Техномарт" width="" height="">
+                <input type="text" name="input-search" id="header-search">
+                <a href="#" class="header-favorite">Закладки</a>
+                <a href="#" class="header-basket">Корзина:10</a>
+                <a href="#" class="header-title">Оформить заказ</a>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <!-- Слоган, контакты, авторизация -->
+                <div class="header-info">
+                    <div class="header-description">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</div>
+                    <div class="header-contacts">
+                        <a href="tel:78125550555" class="phone-block">+7 (812) 555-05-55</a>
+                        <div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+                    </div>
+                    <div class="user-block">
+                        <a href="#">Войти</a>
+                        <a href="#" class="registration">Регистрация</a>
+                    </div>
+                </div>
+                <!-- главное меню -->
+                <nav class="main-menu">
+                    <ul class="main-menu-list">
+                        <li class="active">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Компания</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main-block">
@@ -26,12 +77,12 @@
         </div>
     </main>
     <footer class="footer-block">
-        <div class="footer-topLine">
+        <div class="footer-top-line">
             <div class="container">
 
             </div>
         </div>
-        <div class="footer-bottomLine">
+        <div class="footer-bottom-line">
             <div class="container">
 
             </div>
