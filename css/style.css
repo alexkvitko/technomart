@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     color: black;
@@ -27,18 +27,20 @@ a {
     width: auto;
     height: 42px;
     background-color: #293547;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
-.container {
+.header-line .container {
     width: 940px;
-    /*min-height: 42px;*/
+    height: 42px;
     margin: 0 auto;
 }
 
 .main-logo{
     display: inline-block;
+    vertical-align: top;
     width: 220px;
+    height: 42px;
     background-color: #f62d45;
 }
 
@@ -49,18 +51,51 @@ a {
     margin: 0 auto;
 }
 
+
 .header-search {
-    width: 210px;
-    height: 28px;
-    border: 1px dotted #fff;
-    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+    height: 42px;
+    padding: 0 10px 0 44px;
+    border: none;
+    background-image: url("../img/icon-search.png");
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 18px;
     color: #fff;
     background-color: #293547;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 18px;
+    color: #fff;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 18px;
+    color: #fff;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 18px;
+    color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 18px;
+    color: #fff;
+}
+
+
 .header-line-functions {
+    display: inline-block;
+    vertical-align: top;
     float: right;
-    margin-top: 12px;
+    font-size: 17px;
+    line-height: 26px;
+    padding-top: 7px;
 }
 
 .header-line-functions a {
@@ -68,20 +103,24 @@ a {
 }
 
 .header-favorite {
-        width: 160px;
-        padding: 12px 20px 12px 20px;
+    padding: 10px 45px 12px 26px;
+    background-image: url("../img/icon-favorite.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
 }
 
 .header-basket {
-        width: 160px;
-        padding: 12px 20px 12px 20px;
+    padding: 10px 30px 12px 34px;
+    background-image: url("../img/icon-basket.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
 }
 
 .header-btn-buy {
-    width: 160px;
     background-color: #61A443;
-    padding: 12px 20px 12px 20px;
+    padding: 10px 30px 12px 23px;
 }
+
 
             /* HEADER MIDDLE */
 
@@ -96,11 +135,12 @@ a {
     font-size: 16px;
     font-style: italic;
     line-height: 24px;
-    color: #DF2D30;
+    color: #F3323F;
 }
 
 .header-contacts {
     display: inline-block;
+    vertical-align: top;
     margin-top: 14px;
     margin-left: 70px;
     width: 280px;
@@ -108,18 +148,21 @@ a {
 }
 
 .phone-block {
-    font-size: 18px;
-    color: #DF2D30;
+    font-size: 20px;
+    line-height: 14px;
+    color: #F3323F;
     border: 3px solid #fff;
-    padding: 10px 53px 8px 74px;
-    /*width: 270px;
-    height: 45px;*/
+    padding: 8px 53px 7px 74px;
+    background-image: url("../img/icon-phone.png");
+    background-repeat: no-repeat;
+    background-position: 16px center;
 }
 
 .adress {
-    padding-top: 17px;
+    padding-top: 13px;
     padding-left: 10px;
-    font-size: 13px;
+    font-size: 16px;
+    color: #32425C;
 
 }
 
@@ -160,6 +203,7 @@ nav{
 
 .main-menu li{
     display: inline-block;
+    vertical-align: top;
     vertical-align: middle;
     margin: 0 25px;
 }
