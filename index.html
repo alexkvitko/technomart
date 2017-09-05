@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -14,11 +15,14 @@
         <!-- Логотип, поиск, закладки, корзина, оформить заказ -->
         <div class="header-line">
             <div class="container">
-                <img class="main-logo" src="img/logo.png" alt="Техномарт" width="" height="">
-                <input type="text" name="input-search" id="header-search">
-                <a href="#" class="header-favorite">Закладки</a>
-                <a href="#" class="header-basket">Корзина:0</a>
-                <a href="#" class="header-title">Оформить заказ</a>
+                <div class="main-logo">
+                    <img src="img/logo.png" alt="Техномарт" width="115" height="17">
+                </div>
+                <input class="header-search" type="text" name="input-search" placeholder="Поиск">
+                <div class="header-line-functions">
+                    <a href="#" class="header-favorite">Закладки</a>
+                    <a href="#" class="header-basket">Корзина:0</a>
+                    <a href="#" class="header-btn-buy">Оформить заказ</a>
             </div>
         </div>
         <div class="header-middle">

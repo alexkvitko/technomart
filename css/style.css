@@ -1,117 +1,172 @@
-HEAD
-html
-
-body{
+body {
     margin: 0;
     padding: 0;
     font-size: 14px;
-	line-height: 24px;
-	font-family: "PT Sans Narrow", "Arial", sans-serif;
-	color: black;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: black;
 }
-/*
-.main-header{
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+                /* header begin */
+
+.main-header {
+    margin: 0 auto;
     min-height: 320px;
-    border: 1px dotted red;
     background-color: #f0f4f7;
 }
 
-.header-line{
+.header-line {
     width: auto;
     height: 42px;
-    border: 1px dotted red;
     background-color: #293547;
-    color: #fff;
-
-    margin-bottom: 45px;
+    margin: 0 auto;
 }
 
-.container{
+.container {
     width: 940px;
+    /*min-height: 42px;*/
     margin: 0 auto;
-    border: 1px dotted red;
 }
 
 .main-logo{
+    display: inline-block;
     width: 220px;
     background-color: #f62d45;
 }
 
-.main-logo img{
+.main-logo img {
+    width: 115px;
+    height: 17px;
+    padding: 12px 52px 9px 52px;
+    margin: 0 auto;
+}
+
+.header-search {
+    width: 210px;
+    height: 28px;
+    border: 1px dotted #fff;
+    font-size: 14px;
+    color: #fff;
+    background-color: #293547;
+}
+
+.header-line-functions {
+    float: right;
+    margin-top: 12px;
+}
+
+.header-line-functions a {
+    color: #fff;
+}
+
+.header-favorite {
+        width: 160px;
+        padding: 12px 20px 12px 20px;
+}
+
+.header-basket {
+        width: 160px;
+        padding: 12px 20px 12px 20px;
+}
+
+.header-btn-buy {
+    width: 160px;
+    background-color: #61A443;
+    padding: 12px 20px 12px 20px;
+}
+
+            /* HEADER MIDDLE */
+
+.header-info {
+    padding: 44px 0 44px 52px;
+}
+
+.header-description {
+    float: left;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 13px;
+    width: 210px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    color: #DF2D30;
 }
 
-.btn-buy{
-    width: 150px;
-    background-color: green;
+.header-contacts {
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 70px;
+    width: 280px;
+    background: url(img/icon-phone.png);
 }
 
-.header-middleBlock{
-    width: 940px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    border: 1px dotted red;
-}
-
-.phone-block{
-    min-height: 45px;
+.phone-block {
+    font-size: 18px;
+    color: #DF2D30;
     border: 3px solid #fff;
+    padding: 10px 53px 8px 74px;
+    /*width: 270px;
+    height: 45px;*/
 }
 
-.login{
-    padding: 10px 24px;
+.adress {
+    padding-top: 17px;
+    padding-left: 10px;
+    font-size: 13px;
+
+}
+
+.user-block {
+    float: right;
+    margin-top: 13px;
+}
+
+.user-block a{
+    padding: 10px 26px;
     background-color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+
 }
 
-.registration{
-    padding: 10px 24px;
-    background-color: #fff;
-}
-
-.main-menu{
-    min-height: 60px;
+nav{
     width: 940px;
+    height: 55px;
     margin: 0 auto;
-    margin-bottom: 60px;
     background-color: #32425C;
     border-bottom: 5px solid #293547;
     color: #fff;
 }
 
+.main-menu-list{
+    margin: 11px 0 0 0;
+    padding-top: 20px;
+}
+
+.main-menu-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    border: 1px dotted #fff;
+}
+
 .main-menu li{
     display: inline-block;
     vertical-align: middle;
+    margin: 0 25px;
 }
 
 .main-menu a{
     display: block;
-    padding: 25px 20px;
+    /*padding: 25px 20px;*/
     text-decoration: none;
     color: #fff;
 }
-
-.pop-goods-item{
-    border: 1px dotted red;
-    width: 220px;
-    height: 318px;
-}
-
-.brands-logo-line1 {
-    border: 1px dotted red;
-    width: 940px;
-    height: 145px;
-}
-
-.brands-logo {
-    border: 1px dotted red;
-    width: 220px;
-    height: 145px;
-}
-
-.service-block{
-
-}
-*/
