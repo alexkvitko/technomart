@@ -27,7 +27,6 @@ a {
     width: auto;
     height: 42px;
     background-color: #293547;
-    /*margin: 0 auto;*/
 }
 
 .header-line .container {
@@ -36,7 +35,12 @@ a {
     margin: 0 auto;
 }
 
-.main-logo{
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-logo {
     display: inline-block;
     vertical-align: top;
     width: 220px;
@@ -44,7 +48,7 @@ a {
     background-color: #f62d45;
 }
 
-.main-logo img {
+.main-logo {
     width: 115px;
     height: 17px;
     padding: 12px 52px 9px 52px;
@@ -158,7 +162,7 @@ a {
     background-position: 16px center;
 }
 
-.adress {
+.adress-block {
     padding-top: 13px;
     padding-left: 10px;
     font-size: 16px;
