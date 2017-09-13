@@ -4,6 +4,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: 400;
     color: black;
 }
 
@@ -51,7 +52,7 @@ a {
 .main-logo {
     width: 115px;
     height: 17px;
-    padding: 12px 52px 9px 52px;
+    padding: 12px 52px 13px 52px;
     margin: 0 auto;
 }
 
@@ -59,7 +60,7 @@ a {
 .header-search {
     display: inline-block;
     vertical-align: top;
-    width: 240px;
+    width: 230px;
     height: 42px;
     padding: 0 10px 0 44px;
     border: none;
@@ -99,7 +100,7 @@ a {
     float: right;
     font-size: 17px;
     line-height: 26px;
-    padding-top: 7px;
+    padding-top: 8px;
 }
 
 .header-line-functions a {
@@ -107,14 +108,15 @@ a {
 }
 
 .header-favorite {
-    padding: 10px 45px 12px 26px;
+    padding: 11px 45px 11px 26px;
     background-image: url("../img/icon-favorite.png");
     background-repeat: no-repeat;
     background-position: 0 center;
 }
 
 .header-basket {
-    padding: 10px 30px 12px 34px;
+    margin-right: 10px;
+    padding: 11px 22px 11px 34px;
     background-image: url("../img/icon-basket.png");
     background-repeat: no-repeat;
     background-position: 0 center;
@@ -122,7 +124,7 @@ a {
 
 .header-btn-buy {
     background-color: #61A443;
-    padding: 10px 30px 12px 23px;
+    padding: 11px 30px 11px 23px;
 }
 
 
@@ -175,13 +177,24 @@ a {
     margin-top: 13px;
 }
 
-.user-block a{
-    padding: 10px 26px;
+.user-block a {
     background-color: #fff;
-    font-size: 20px;
+    font-size: 21px;
     text-decoration: none;
-    color: gray;
+    color: #000;
+}
 
+.user-login {
+    margin-left: 10px;
+    padding: 10px 27px 10px 48px;
+    background-image: url("../img/icon-login.png");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+.user-registration {
+    margin-left: 10px;
+    padding: 10px 25px 10px 25px;
 }
 
 nav{
