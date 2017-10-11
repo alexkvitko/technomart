@@ -77,9 +77,8 @@ a {
     display: inline-block;
     vertical-align: top;
     float: right;
-    font-size: 17px;
-    line-height: 26px;
-    padding-top: 8px;
+    max-width: 440px;
+    font-size: 0;
 }
 
 .header-line-functions a {
@@ -87,24 +86,36 @@ a {
 }
 
 .header-favorite {
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 10px;
-    padding: 11px 34px 11px 26px;
+    padding: 8px 34px 8px 26px;
+    font-size: 17px;
+    line-height: 26px;
     background-image: url("../img/icon-favorite.png");
     background-repeat: no-repeat;
     background-position: 0 center;
 }
 
 .header-basket {
-    margin-right: 8px;
-    padding: 11px 22px 11px 34px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding: 8px 22px 8px 34px;
+    font-size: 17px;
+    line-height: 26px;
     background-image: url("../img/icon-basket.png");
     background-repeat: no-repeat;
     background-position: 0 center;
 }
 
 .header-btn-buy {
+    display: inline-block;
+    vertical-align: middle;
     background-color: #61A443;
-    padding: 11px 30px 11px 23px;
+    padding: 8px 30px 8px 23px;
+    font-size: 17px;
+    line-height: 26px;
 }
 
 
@@ -190,7 +201,8 @@ nav {
 .main-menu-list {
     display: block;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 22px;
+    font-size: 0;
 }
 
 .main-menu li {
@@ -206,6 +218,14 @@ nav {
     padding: 18px 20px;
     font-size: 18px;
     color: #fff;
+}
+
+.menu-item:hover {
+    background-color: #293647;
+}
+
+.main-menu-list .active {
+    background-color: #1D2739;
 }
 
             /* MAIN */
@@ -249,7 +269,7 @@ nav {
     vertical-align: middle;
     width: 300px;
     margin-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     background-color: #f6b22d;
     background-image: url("../img/bg_feature_material.png");
     background-repeat: no-repeat;
@@ -261,7 +281,7 @@ nav {
     vertical-align: middle;
     width: 300px;
     margin-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     background-color: #47afdb;
     background-image: url("../img/bg_feature_tools.png");
     background-repeat: no-repeat;
@@ -269,11 +289,10 @@ nav {
 }
 
 .feature-machinery {
-    /*float: right;*/
     display: inline-block;
     vertical-align: middle;
     width: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     background-color: #cb7bcc;
     background-image: url(../img/bg_feature_machinery.png);
     background-repeat: no-repeat;
@@ -285,13 +304,14 @@ nav {
     vertical-align: top;
     margin-right: 20px;
     width: 620px;
-    background-color: #f6b22d;
+    background-color: #F1F5F8;
 }
 
             /* SLIDER BEGIN */
 
 .slide-1 {
-    padding: 24px;
+    padding: 26px 26px 0 26px;
+    font-size: 0;
     background-image: url("../img/features-slider-img1.jpg");
     background-repeat: no-repeat;
 }
@@ -305,7 +325,7 @@ nav {
 .slider-title {
     display: inline-block;
     vertical-align: top;
-    margin: 0 23px 0px 0;
+    padding: 4px 0;
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 400;
@@ -315,7 +335,7 @@ nav {
 .slide-subtitle {
     display: inline-block;
     vertical-align: top;
-    margin: 8px 23px 14px 0;
+    margin: 4px 23px 14px 0;
     font-size: 18px;
     font-weight: 400;
     color: #fff;
@@ -334,6 +354,26 @@ nav {
     border-radius: 4px;
 }
 
+li .slider-dot .slider-dot-active {
+    position: absolute;
+    background: red;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    margin: 219px 255px;
+    width: 8px;
+    height: 8px;
+}
+
+li .slider-dot {
+    position: absolute;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    margin: 219px 275px;
+    width: 8px;
+    height: 8px;
+}
+
             /* SLIDER END */
 
 .two-features {
@@ -345,38 +385,44 @@ nav {
     display: block;
     margin-bottom: 20px;
     width: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     background-color: #80d182;
     background-image: url("../img/bg_feature_sales.png");
     background-repeat: no-repeat;
-    background-position: 213px;
+    background-position: 200px;
 }
 
 .feature-delivery {
     display: block;
     width: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     background-color: #f6b22d;
     background-image: url("../img/bg_feature_delivery.png");
     background-repeat: no-repeat;
-    background-position: 213px;
+    background-position: 197px;
 }
 
             /* FEATURES END */
 
             /* GOODS BEGIN */
 
+.goods {
+    position: relative;
+}
+
 .goods-line {
     width: auto;
     height: 44px;
-    padding: 24px;
+    margin-bottom: 20px;
+    padding: 16px 24px 29px 28px;
     background-color: #f8f3ed;
 }
 
 .goods-title {
     float: left;
-    padding-top: 12px;
+    padding-top: 18px;
     font-size: 30px;
+    text-align: center;
     text-transform: uppercase;
     color: #323e64;
 }
@@ -385,13 +431,103 @@ nav {
     float: right;
     display: inline-block;
     vertical-align: middle;
+    margin-top: 8px;
+    padding: 8px 58px;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    padding: 10px 58px;
+    background-color: #ef3644;
+    border-radius: 4px;
+}
+
+.goods-cards {
+    font-size: 0;
+}
+
+.goods-item {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 218px;
+    margin: 0 20px 20px 0;
+    border: 1px solid #e5e5e5;
+}
+
+.goods-item:last-child {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 220px;
+    margin-right: 0;
+}
+
+.goods-item img {
+    margin: 20px 12px 17px 14px;
+}
+
+/*.goods-item .icon-new {
+    position: absolute;
+    transition: -10px;
+}*/
+
+.new-price {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 10px 34px;
     background-color: #ef3644;
     border-radius: 4px;
 }
 
             /* GOODS END */
+
+            /* BRANDS BEGIN */
+
+.brands-line {
+    width: auto;
+    height: 44px;
+    margin-bottom: 20px;
+    padding: 16px 24px 29px 24px;
+    background-color: #f8f3ed;
+}
+
+.brands-title {
+    float: left;
+    padding-top: 18px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323e64;
+}
+
+.brands-btn {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    padding: 7px 34px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #ef3644;
+    border-radius: 4px;
+}
+
+.brands-logo {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.goods-cards .brand-title {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
