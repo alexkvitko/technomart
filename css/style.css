@@ -310,7 +310,7 @@ nav {
             /* SLIDER BEGIN */
 
 .slide-1 {
-    padding: 26px 26px 0 26px;
+    padding: 26px;
     font-size: 0;
     background-image: url("../img/features-slider-img1.jpg");
     background-repeat: no-repeat;
@@ -374,7 +374,7 @@ li .slider-dot {
     height: 8px;
 }
 
-            /* SLIDER END */
+/* FEATURES BEGIN */
 
 .two-features {
     display: inline-block;
@@ -402,13 +402,12 @@ li .slider-dot {
     background-position: 197px;
 }
 
-            /* FEATURES END */
-
-            /* GOODS BEGIN */
+/* GOODS BEGIN */
 
 .goods {
     position: relative;
 }
+
 
 .goods-line {
     width: auto;
@@ -473,6 +472,7 @@ li .slider-dot {
     display: inline-block;
     vertical-align: middle;
     margin-left: 40px;
+    margin-bottom: 20px;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
@@ -482,9 +482,27 @@ li .slider-dot {
     border-radius: 4px;
 }
 
-            /* GOODS END */
+.goods-cards .brand-title {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
 
-            /* BRANDS BEGIN */
+.goods-cards .old-price {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #9a9a9a;
+    text-align: center;
+}
+
+/* BRANDS BEGIN */
+
+.brands {
+    margin-bottom: 65px;
+}
 
 .brands-line {
     width: auto;
@@ -520,14 +538,100 @@ li .slider-dot {
 .brands-logo {
     display: inline-block;
     vertical-align: top;
-    min-width: 220px;
     margin-right: 20px;
     margin-bottom: 20px;
+    padding: 26px 18px;
     border: 1px solid #e5e5e5;
 }
 
-.goods-cards .brand-title {
-    font-size: 16px;
-    color: #000;
-    text-align: center;
+.brands-logo:last-child {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    margin-right: 0;
+    border: 1px solid #e5e5e5;
 }
+
+.brands-logos-1 {
+    font-size: 0;
+}
+
+.brands-logos-2 {
+    font-size: 0;
+}
+
+/* SERVICE BEGIN */
+
+.service-block {
+    padding-top: 66px;
+    background-color: #F1F5F8;
+}
+
+.service-block .container {
+    display: block;
+    background-image: url("..img/services_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 190px;
+}
+
+.service-title {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #1D2739;
+}
+
+.service-info {
+    margin-bottom: 35px;
+    width: 406px;
+    font-size: 16px;
+}
+
+/* THREE-TABS BEGIN */
+
+.three-tabs {
+    clear: both;
+}
+
+.radio-tab {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #428bca;
+    padding: 0 10px;
+}
+
+
+.tabs-title {
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323e64;
+    }
+}
+
+    /* services-description */
+
+.services-delivery {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 200px;
+}
+
+.services-guaranty {
+    display: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.services-credit {
+    display: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* SERVICE END*/
