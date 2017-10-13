@@ -445,9 +445,10 @@ li .slider-dot {
 }
 
 .goods-item {
+    position: relative;
     display: inline-block;
     vertical-align: top;
-    min-width: 218px;
+    width: 218px;
     margin: 0 20px 20px 0;
     border: 1px solid #e5e5e5;
 }
@@ -455,18 +456,20 @@ li .slider-dot {
 .goods-item:last-child {
     display: inline-block;
     vertical-align: top;
-    min-width: 220px;
+    width: 218px;
     margin-right: 0;
 }
 
-.goods-item img {
-    margin: 20px 12px 17px 14px;
+.goods-img {
+    margin: 20px auto 17px;
+    display: block;
 }
 
-/*.goods-item .icon-new {
+.goods-item .icon-new {
     position: absolute;
-    transition: -10px;
-}*/
+    top: 0;
+    right: 0;
+}
 
 .new-price {
     display: inline-block;
@@ -490,8 +493,8 @@ li .slider-dot {
 }
 
 .goods-cards .old-price {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    width: 100%;
     font-size: 16px;
     text-decoration: line-through;
     color: #9a9a9a;
@@ -623,13 +626,11 @@ li .slider-dot {
 
 .services-guaranty {
     display: none;
-    display: inline-block;
     vertical-align: top;
 }
 
 .services-credit {
     display: none;
-    display: inline-block;
     vertical-align: top;
 }
 
