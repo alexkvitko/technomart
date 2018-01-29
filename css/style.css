@@ -44,18 +44,20 @@ a {
 .main-logo {
     display: inline-block;
     vertical-align: top;
-    width: 220px;
-    height: 42px;
-    box-shadow: 0px 5px 0px 0px #b52932;
-    background-color: #ef3644;
-}
-
-.main-logo {
     width: 115px;
     height: 17px;
     padding: 12px 52px 13px 52px;
     margin: 0 auto;
+    box-shadow: 0px 5px 0px 0px #b52932;
+    background-color: #ef3644;
 }
+
+/* .main-logo {
+    width: 115px;
+    height: 17px;
+    padding: 12px 52px 13px 52px;
+    margin: 0 auto;
+} */
 
 
 .header-search {
@@ -788,3 +790,27 @@ nav {
 }
 
 /* end company info */
+
+/* begin footer-block */
+
+.footer-block {
+    background-color: #32425c;
+    color: #fff;
+}
+
+.footer-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 115px;
+    height: 17px;
+    padding: 12px 52px 13px 52px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 0px 0px #b52932;
+    background-color: #ef3644;
+}
+
+.footer-bottom-line {
+    background-color: #293448;
+}
+
+/* end footer-block */
