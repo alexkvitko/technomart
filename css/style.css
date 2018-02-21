@@ -16,24 +16,8 @@ a {
     text-decoration: none;
 }
 
-@font-face {
-
-    font-family: 'symbols-technomart';
-
-    src: url('../fonts/symbols-technomart.woff');
-
-    src: url('../fonts/symbols-technomart.eot?iefix') format('eot'),
-
-    url('../fonts/symbols-technomart.woff') format('woff'),
-
-    url('../fonts/symbols-technomart.ttf') format('truetype'),
-
-    url('../fonts/symbols-technomart.svg#webfont') format('svg');
-
-    font-weight: normal;
-
-    font-style: normal;
-
+.clearfix {
+    clear:both;
 }
 
                 /* header begin */
@@ -550,6 +534,7 @@ nav {
     float: left;
     padding-top: 18px;
     font-size: 30px;
+    letter-spacing: 0.6px;
     text-align: center;
     text-transform: uppercase;
     color: #323e64;
@@ -674,6 +659,7 @@ nav {
     float: left;
     padding-top: 18px;
     font-size: 30px;
+    letter-spacing: 0.4px;
     text-align: center;
     text-transform: uppercase;
     color: #323e64;
@@ -684,7 +670,7 @@ nav {
     display: inline-block;
     vertical-align: middle;
     margin-top: 10px;
-    padding: 7px 34px;
+    padding: 7px 70px;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
@@ -713,6 +699,33 @@ nav {
     border: 1px solid #e5e5e5;
 }
 
+
+.brands-logo:hover {
+    border: 1px solid #fff;
+    box-shadow: 0 10px 25px rgba(41,42,73,0.5);
+}
+
+
+.brands-logo:active {
+    border: 1px solid #fff;
+    box-shadow: 0 4px 10px rgba(41,42,73,0.5);
+}
+
+
+
+.brands-logo:last-child:hover {
+    border: 1px solid #fff;
+    box-shadow: 0 10px 25px rgba(41,42,73,0.5);
+}
+
+
+.brands-logo:last-child:active {
+    border: 1px solid #fff;
+    box-shadow: 0 4px 10px rgba(41,42,73,0.5);
+}
+
+
+
 .brands-logo:last-child {
     display: inline-block;
     vertical-align: top;
@@ -721,13 +734,11 @@ nav {
     border: 1px solid #e5e5e5;
 }
 
-.brands-logos-1 {
-    font-size: 0;
-}
-
+.brands-logos-1,
 .brands-logos-2 {
     font-size: 0;
 }
+
 
 /* SERVICE BEGIN */
 
@@ -747,17 +758,20 @@ nav {
     color: #1D2739;
 }
 
+
 .service-info-top {
     margin-bottom: 35px;
     width: 406px;
     font-size: 16px;
 }
 
+
 .service-info {
     margin-bottom: 35px;
     width: 273px;
     font-size: 16px;
 }
+
 
 /* THREE-TABS BEGIN */
 
@@ -768,36 +782,51 @@ nav {
     margin-top: 33px;
 }
 
-/*.tab-delivery {
-    clear: both;
+
+/* .tab-delivery {
     background-color: #263A51;
-}*/
+} */
+
 
 .radio-tab {
-    /*clear: none;*/
     display: none;
     border: 2px solid #428bca;
     padding: 10px 10px;
     background-color: #263A51;
 }
 
+
 .radio-tab checked {
-    /*clear: none;*/
     display: none;
     border: 2px solid #428bca;
     padding: 10px 10px;
     background-color: #fff;
 }
 
+
 .service-tab {
     display: block;
-    padding: 17px 0 18px 22px;
+    padding: 13px 0 16px 22px;
     background-color: #32425C;
     border-top: 1px solid #404F66;
     border-bottom: 1px solid #28344C;
-    color: #fff;
-    font-size: 24px;
 }
+
+
+.service-tab a {
+    font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.8px;
+    color: #fff;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+
+.service-tab:hover {
+    background-color: #fff;
+    color: #32425c;
+}
+
 
 .tabs-title {
     display: inline-block;
@@ -818,6 +847,7 @@ nav {
     font-size: 0;
 }
 
+
 .service-delivery {
     padding: 38px 0 92px 77px;
     background-image: url("../img/delivery_bg.jpg");
@@ -825,6 +855,7 @@ nav {
     background-position: 238px 57px;
     font-size: 0;
 }
+
 
 .service-guaranty {
     display: none;
@@ -933,7 +964,7 @@ nav {
 .contacts-title {
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
     font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
@@ -943,7 +974,7 @@ nav {
 .write-us-btn {
     display: block;
     vertical-align: middle;
-    margin-top: 33px;
+    margin-top: 35px;
     padding: 10px 34px;
     font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
@@ -986,6 +1017,7 @@ nav {
     text-transform: uppercase;
     color: #fff;
     margin: 0 auto;
+    margin-bottom: 32px;
     box-shadow: 0px 5px 0px 0px #b52932;
     background-color: #ef3644;
 }
@@ -1002,61 +1034,98 @@ nav {
 
 /* end footer-block */
 
+
 /* begin footer-bottom-line */
 
 .footer-left-column {
     display: inline-block;
-    max-width: 40%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    max-width: 36%;
 }
 
+
 .footer-contact {
+    padding-left: 2px;
     font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
     font-size: 18px;
+    word-spacing: 0.5px;
     line-height: 24px;
     color: #fff;
 }
 
+
 .footer-phone-block {
+    padding-left: 3px;
     font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
-    font-size: 21px;
-    word-spacing: 0.5px;
+    font-size: 18px;
+    word-spacing: 0.4px;
     color: #fff;
 }
+
 
 .footer-right-column {
     float: right;
     display: inline-block;
-    margin-top: 35px;
-    max-width: 60%;
+    vertical-align: middle;
+    max-width: 64%;
 }
 
-.footer-right-column li {
+
+.footer-right-column-firstline {
+    margin-top: 37px;
+    padding: 0;
+}
+
+
+.footer-right-column-firstline li {
+    float: right;
+    display: inline-block;
     vertical-align: middle;
-    display: inline;
+}
+
+
+
+.footer-right-column-firstline a {
     text-decoration: none;
-    margin: 0 8px;
-    padding: 18px 22px;
+    margin: 0;
+    padding: 12px 0 12px 58px;
     font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #fff;
 }
 
-.footer-menu-item {
 
+.footer-right-column-secondline {
+    margin-top: 33px;
+    padding: 0;
 }
 
 
-.white-link {
-    color: #fff;
+.footer-right-column-secondline li {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.yellow-link {
+
+.footer-right-column-secondline a {
+    vertical-align: middle;
+    display: inline;
+    text-decoration: none;
+    margin: 0;
+    padding: 12px 0 12px 60px;
+    font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
     color: #ffd180;
 }
 
+
 .copyright {
     display: inline-block;
+    vertical-align: middle;
     font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -1065,10 +1134,12 @@ nav {
 
 .social {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .social-block {
     display: inline-block;
+    vertical-align: middle;
     width: 42px;
     height: 42px;
     border-radius: 20px;
@@ -1079,6 +1150,7 @@ nav {
 
 .footer-feedback {
     display: inline-block;
+    vertical-align: middle;
     padding: 0 30px 0 0;
 }
 
@@ -1088,6 +1160,7 @@ nav {
 
 .developer-is {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .developer-is a {
