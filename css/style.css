@@ -399,11 +399,6 @@ nav {
 
             /* SLIDER BEGIN */
 
-.slider-dots {
-    position: absolute;
-    bottom: 62px;
-    left: 280px;
-}
 
 .slide-1 {
     position: relative;
@@ -411,7 +406,7 @@ nav {
     padding: 26px;
     font-size: 0;
     background-image: url("../img/features-slider-img1.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .slide-2 {
@@ -465,16 +460,37 @@ nav {
 }
 
 
-.slider-dot .slider-dot-active {
-    display: inline-block;
-    vertical-align: middle;
-    background: red;
-    border: 2px solid #fff;
-    border-radius: 7px;
-    margin: 4px 4px;
-    width: 8px;
-    height: 8px;
+.slider-arrow-left {
+    position: absolute;
+    z-index: 2;
+    top: 115px;
+    left: 25px;
+    width: 22px;
+    height: 40px;
+    background-image: url("../img/icon-left.png");
+    background-repeat: no-repeat;
 }
+
+
+.slider-arrow-right {
+    position: absolute;
+    z-index: 3;
+    top: 115px;
+    right: 25px;
+    width: 22px;
+    height: 40px;
+    background-image: url("../img/icon-right.png");
+    background-repeat: no-repeat;
+}
+
+
+.slider-dots {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 250px;
+}
+
 
 .slider-dot {
     display: inline-block;
@@ -486,6 +502,20 @@ nav {
     width: 8px;
     height: 8px;
 }
+
+
+.slider-dot:hover {
+    background: red;
+    border: 2px solid #fff;
+}
+
+
+.slider-dots .active {
+    background: red;
+    border: 2px solid #fff;
+    border-radius: 7px;
+}
+
 
 /* FEATURES BEGIN */
 
@@ -577,6 +607,7 @@ nav {
     width: 220px;
     min-height: 318px;
     margin: 0 20px 20px 0;
+    padding: 16px;
     border: 1px solid #e5e5e5;
 }
 
@@ -587,9 +618,22 @@ nav {
     margin: 0 0 20px 0;
 }
 
+
+.goods-item:hover {
+    border: 1px solid #fff;
+    box-shadow: 0 10px 25px rgba(41,42,73,0.5);
+    top: -4px;
+}
+
+
 .goods-img {
-    margin: 20px auto 28px;
     display: block;
+    margin: 16px auto;
+}
+
+.goods-img img {
+    margin: auto;
+    text-align:center;
 }
 
 .goods-item .icon-new {
@@ -605,11 +649,14 @@ nav {
     left: 42px;
     margin: 0 auto;
     width: 122px;
-    font-size: 14px;
+    font-family: "PT-Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    padding: 7px 0;
+    padding: 10px 0;
     background-color: #ef3644;
     border-radius: 4px;
 }
@@ -625,7 +672,10 @@ nav {
 
 
 .goods-cards .brand-title {
-    margin-bottom: 2px;
+    width: 190px;
+    height: 44px;
+    position: absolute;
+    top: 178px;
     font-size: 20px;
     font-weight: bold;
     color: #000;
@@ -634,10 +684,20 @@ nav {
 
 .goods-cards .old-price {
     display: block;
-    width: 100%;
-    font-size: 16px;
+    width: 190px;
+    height: 20px;
+    position: absolute;
+    top: 230px;
+    font-family: "PT-Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
     text-decoration: line-through;
-    color: #9a9a9a;
+    color: #999999;
+    text-align: center;
+}
+
+.goods-category{
     text-align: center;
 }
 
@@ -796,7 +856,7 @@ nav {
 }
 
 
-.radio-tab checked {
+.radio-tab:checked {
     display: none;
     border: 2px solid #428bca;
     padding: 10px 10px;
@@ -810,16 +870,12 @@ nav {
     background-color: #32425C;
     border-top: 1px solid #404F66;
     border-bottom: 1px solid #28344C;
-}
-
-
-.service-tab a {
+    cursor: pointer;
     font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
     letter-spacing: 0.8px;
     color: #fff;
-    font-size: 21px;
-    line-height: 30px;
 }
+
 
 
 .service-tab:hover {
@@ -933,7 +989,11 @@ nav {
 }
 
 
+
+
+
 .delivery-company {
+    position: relative;
     margin-bottom: 16px;
     padding-left: 36px;
     font-size: 20px;
@@ -944,13 +1004,47 @@ nav {
     padding: 3px 0 24px 0;
 }
 
+.company1::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
 .company2 {
     padding: 2px 0 23px 0;
 }
 
+
+.company2::before {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
+
 .company3 {
     padding: 3px 0 24px 0;
 }
+
+
+.company3::before {
+    content: "";
+    position: absolute;
+    top: 89px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
 
 .company-contacts {
     float: right;
@@ -1036,6 +1130,11 @@ nav {
 
 
 /* begin footer-bottom-line */
+
+.footer-content {
+    position: relative;
+    padding: 20px 0 20px 0;
+}
 
 .footer-left-column {
     display: inline-block;
@@ -1133,6 +1232,9 @@ nav {
 }
 
 .social {
+    position: absolute;
+    left: 390px;
+    top: 34px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -1144,14 +1246,40 @@ nav {
     height: 42px;
     border-radius: 20px;
     background-color: #212a3a;
-    margin-right: 10px;
-    vertical-align: middle;
+    /* margin-right: 5px; */
 }
+
+
+.social-btn-vk {
+    background-image: url("../img/icon-vk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.social-btn-fb {
+    background-image: url("../img/icon-fb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.social-btn-inst {
+    background-image: url("../img/icon-inst.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .footer-feedback {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 30px 0 0;
+    float: right;
+    margin-right: 52px;
+    padding: 16px 0 0;
+    font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .footer-feedback a {
@@ -1161,6 +1289,12 @@ nav {
 .developer-is {
     display: inline-block;
     vertical-align: middle;
+    float: right;
+    padding-top: 16px;
+    margin-right: 14px;
+    font-family: "Cuprum", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .developer-is a {

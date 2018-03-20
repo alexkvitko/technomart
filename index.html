@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="/fonts/symbols-technomart.woff">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="/fonts/symbols-technomart.woff"> -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -93,7 +93,7 @@
                         <div class="slider-arrow-left"></div>
                         <div class="slider-arrow-right"></div>
                         <ul class="slider-dots">
-                            <li class="slider-dot slider-dot-active">
+                            <li class="slider-dot active">
                                 <a href="#"></a>
                             </li>
                             <li class="slider-dot">
@@ -132,38 +132,46 @@
                 </div>
                 <div class="goods-cards">
                     <a class="goods-item" href="#">
-                        <img src="img/goods-item-1.jpg" class="goods-img" alt="Перфоратор BOSCH BFG 9000" width="182" height="130">
+                        <div class="goods-img">
+                            <img src="img/goods-item-1.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
+                        </div>
                         <div class="brand-title">
-                            <span>Перфоратор BOSCH</span><br>
-                            <span>BFG 9000</span>
+                            <span class="goods-category">Перфоратор BOSCH</span><br>
+                            <span class="goods-model">BFG 9000</span>
                         </div>
                         <span class="old-price">32 500 P.</span><br>
                         <span class="new-price-btn">25 500 P.</span>
                     </a>
                     <a class="goods-item" href="#">
-                        <img src="img/goods-item-1.jpg"  class="goods-img" alt="Перфоратор BOSCH BFG 3000" width="182" height="130">
+                        <div class="goods-img">
+                            <img src="img/goods-item-2.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+                        </div>
                         <div class="brand-title">
-                            <span>Перфоратор BOSCH</span><br>
-                            <span>BFG 3000</span>
+                            <span class="goods-category">Перфоратор BOSCH</span><br>
+                            <span class="goods-model">BFG 3000</span>
                         </div>
                         <span class="old-price">25 500 P.</span><br>
                         <span class="new-price-btn">15 500 P.</span>
                     </a>
                     <a class="goods-item" href="#">
-                        <img src="img/goods-item-1.jpg" class="goods-img" alt="Перфоратор BOSCH BFG 6000" width="182" height="130">
+                        <div class="goods-img">
+                            <img src="img/goods-item-3.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+                        </div>
                         <div class="brand-title">
-                            <span>Перфоратор BOSCH</span><br>
-                            <span>BFG 6000</span>
+                            <span class="goods-category">Перфоратор BOSCH</span><br>
+                            <span class="goods-model">BFG 6000</span>
                         </div>
                         <span class="old-price">30 500 P.</span><br>
                         <span class="new-price-btn">25 500 P.</span>
                     </a>
                     <a class="goods-item" href="#">
-                        <img src="img/goods-item-1.jpg" class="goods-img" alt="Перфоратор BOSCH BFG 2000" width="182" height="130">
+                        <div class="goods-img">
+                            <img src="img/goods-item-2.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+                        </div>
                         <img class="icon-new" src="img/new-flag.png" alt="new-item" width="60" height="60">
                         <div class="brand-title">
-                            <span>Перфоратор BOSCH</span><br>
-                            <span>BFG 2000</span>
+                            <span class="goods-category">Перфоратор BOSCH</span><br>
+                            <span class="goods-model">BFG 2000</span>
                         </div>
                         <!-- <span class="old-price"></span><br> -->
                         <span class="new-price-btn">12 500 P.</span>
@@ -197,20 +205,15 @@
                 <p class="service-info-top">Хороший интернет-магазин отличается от&nbsp;плохого не&nbsp;только ценами! Мы&nbsp;стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                 <!-- Табы -->
                 <div class="service-slider">
-                    <input type="radio" name="3tabs" class="radio-tab" id="tab-delivery" value="Доставка" checked>
-                    <input type="radio" name="3tabs" class="radio-tab" id="tab-guaranty" value="Гарантии">
-                    <input type="radio" name="3tabs" class="radio-tab" id="tab-credit" value="Кредит">
                     <div class="three-tabs">
-                        <label for="delivery-tab" class="service-tab">
-                            <a href="#" class="delivery-tab">Доставка</a>
-                        </label>
-                        <label for="guaranty-tab" class="service-tab">
-                            <a href="#" class="guaranty-tab">Гарантия</a>
-                        </label>
-                        <label for="credit-tab" class="service-tab">
-                            <a href="#" class="credit-tab">Кредит</a>
-                        </label>
+                        <input type="radio" name="3tabs" class="radio-tab" id="tab-delivery" value="Доставка" checked>
+                        <label for="delivery-tab" class="service-tab">Доставка</label>
+                        <input type="radio" name="3tabs" class="radio-tab" id="tab-guaranty" value="Гарантии">
+                        <label for="guaranty-tab" class="service-tab">Гарантия</label>
+                        <input type="radio" name="3tabs" class="radio-tab" id="tab-credit" value="Кредит">
+                        <label for="credit-tab" class="service-tab">Кредит</label>
                     </div>
+
                     <!-- Блоки с текстом и фоновой картинкой -->
                     <div class="service-slider-content">
                         <div class="service-delivery">
@@ -301,19 +304,21 @@
         </div>
         <div class="footer-bottom-line">
             <div class="container">
-                <p class="copyright">© 2010–2016 Компания «Техномарт»<br>Все права защищены</p>
-                <div class="social">
-                    <a class="social-block social-btn-vk" href="#"></a>
-                    <a class="social-block social-btn-fb" href="#"></a>
-                    <a class="social-block social-btn-inst" href="#"></a>
-                </div>
-                <div class="footer-feedback">
-                    <span>Обратная связь:</span><br>
-                    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </div>
-                <div class="developer-is">
-                    <span>Разработано —</span><br>
-                    <a href="#">htmlacademy.ru</a>
+                <div class="footer-content">
+                    <p class="copyright">© 2010–2016 Компания «Техномарт»<br>Все права защищены</p>
+                    <div class="social">
+                        <a class="social-block social-btn-vk" href="#"></a>
+                        <a class="social-block social-btn-fb" href="#"></a>
+                        <a class="social-block social-btn-inst" href="#"></a>
+                    </div>
+                    <div class="developer-is">
+                        <span>Разработано —</span><br>
+                        <a href="#">htmlacademy.ru</a>
+                    </div>
+                    <div class="footer-feedback">
+                        <span>Обратная связь:</span><br>
+                        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </div>
                 </div>
             </div>
         </div>
