@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/fonts/symbols-technomart.woff"> -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -25,50 +25,50 @@
                     <a href="#" class="header-btn-buy">Оформить заказ</a>
             </div>
         </div>
-        <div class="header-middle">
-            <div class="container">
-                <!-- Слоган, контакты, авторизация -->
-                <div class="header-info">
-                    <div class="header-description">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</div>
-                    <div class="header-contacts">
-                        <a href="tel:78125550555" class="phone-block">+7 (812) 555-05-55</a>
-                        <div class="adress-block">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-                    </div>
-                    <div class="user-block">
-                        <a class="user-login" href="#">Войти</a>
-                        <a class="user-registration" href="#">Регистрация</a>
-                    </div>
-                </div>
-                <!-- главное меню -->
-                <nav class="main-menu">
-                    <ul class="main-menu-list">
-                        <li class="active">
-                            <a href="#">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#">Компания</a>
-                        </li>
-                        <li>
-                            <a href="#">Каталог</a>
-                        </li>
-                        <li>
-                            <a href="#">Новости</a>
-                        </li>
-                        <li>
-                            <a href="#">Спецпредложения</a>
-                        </li>
-                        <li>
-                            <a href="#">Доставка</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
     </header>
     <!-- Основной блок, где все, кроме подвала -->
+    <div class="header-middle">
+        <div class="container">
+            <!-- Слоган, контакты, авторизация -->
+            <div class="header-info">
+                <div class="header-description">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</div>
+                <div class="header-contacts">
+                    <a href="tel:78125550555" class="phone-block">+7 (812) 555-05-55</a>
+                    <div class="adress-block">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+                </div>
+                <div class="user-block">
+                    <a class="user-login" href="#">Войти</a>
+                    <a class="user-registration" href="#">Регистрация</a>
+                </div>
+            </div>
+            <!-- главное меню -->
+            <nav class="main-menu">
+                <ul class="main-menu-list">
+                    <li class="active">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Компания</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Спецпредложения</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <main class="main-block">
         <div class="container">
         <!-- Блок с категориями товаров + слайдер -->
@@ -77,14 +77,18 @@
                     <div class="feature-materials">
                         <span class="feature-title">Материалы</span>
                         <a class="feature-btn" href="#">На любой вкус</a>
+                        <div class="features-material-icon"></div>
+                        <div class="icon-new"></div>
                     </div>
                     <div class="feature-tools">
                         <span class="feature-title">Инструмент</span>
                         <a class="feature-btn" href="#">На все случаи</a>
+                        <div class="features-tools-icon"></div>
                     </div>
                     <div class="feature-machinery">
                         <span class="feature-title">Техника</span>
                         <a class="feature-btn" href="#">Для стройки</a>
+                        <div class="features-machinery-icon"></div>
                     </div>
                 </div>
                 <div class="features-line2">
@@ -116,10 +120,12 @@
                         <div class="feature-sales">
                             <span class="feature-title">Скидки 50%</span>
                             <a class="feature-btn" href="#">На 350 товаров</a>
+                            <div class="feature-sales-icon"></div>
                         </div>
                         <div class="feature-delivery">
                             <span class="feature-title">Доставка</span>
                             <a class="feature-btn" href="#">Бесплатно</a>
+                            <div class="feature-delivery-icon"></div>
                         </div>
                     </div>
                 </div>
@@ -185,16 +191,32 @@
                     <a class="brands-btn" href="#">Все производители</a>
                 </div>
                 <div class="brands-logos-1">
-                    <img class="brands-logo" src="img/logo_bosch.jpg" alt="BOSCH" width="182" height="92">
-                    <img class="brands-logo" src="img/logo_makita.jpg" alt="MAKITA" width="182" height="92">
-                    <img class="brands-logo" src="img/logo_dewalt.jpg" alt="DeWOLT" width="182" height="92">
-                    <img class="brands-logo" src="img/logo_interscol.jpg" alt="ИНТЕРСКОЛ" width="182" height="92">
+                    <div class="brands-logo">
+                        <img src="img/logo_bosch.jpg" alt="BOSCH" width="182" height="92">
+                    </div>
+                    <div class="brands-logo">
+                        <img src="img/logo_makita.jpg" alt="MAKITA" width="182" height="92">
+                    </div>
+                    <div class="brands-logo">
+                        <img src="img/logo_dewalt.jpg" alt="DeWOLT" width="182" height="92">
+                    </div>
+                    <div class="brands-logo">
+                        <img src="img/logo_interscol.jpg" alt="ИНТЕРСКОЛ" width="182" height="92">
+                    </div>
                 </div>
                 <div class="brands-logos-2">
-                    <img class="brands-logo" src="img/logo_hitachi.jpg" alt="HITACHI" width="182" height="92">
-                    <img class="brands-logo" src="img/logo_lg.jpg" alt="LG" width="182" height="92">
-                    <img class="brands-logo" src="img/logo_aeg.jpg" alt="AEG" width="182" height="92">
-                    <img class="brands-logo" src="img/logo_metabo.jpg" alt="metabo" width="182" height="92">
+                    <div class="brands-logo">
+                        <img src="img/logo_hitachi.jpg" alt="HITACHI" width="182" height="92">
+                    </div>
+                    <div class="brands-logo">
+                        <img src="img/logo_lg.jpg" alt="LG" width="182" height="92">
+                    </div>
+                    <div class="brands-logo">
+                        <img src="img/logo_aeg.jpg" alt="AEG" width="182" height="92">
+                    </div>
+                    <div class="brands-logo">
+                        <img src="img/logo_metabo.jpg" alt="metabo" width="182" height="92">
+                    </div>
                 </div>
             </section>
         </div>
@@ -207,7 +229,7 @@
                 <div class="service-slider">
                     <div class="three-tabs">
                         <input type="radio" name="3tabs" class="radio-tab" id="tab-delivery" value="Доставка" checked>
-                        <label for="delivery-tab" class="service-tab">Доставка</label>
+                        <label for="delivery-tab" class="service-tab active">Доставка</label>
                         <input type="radio" name="3tabs" class="radio-tab" id="tab-guaranty" value="Гарантии">
                         <label for="guaranty-tab" class="service-tab">Гарантия</label>
                         <input type="radio" name="3tabs" class="radio-tab" id="tab-credit" value="Кредит">
